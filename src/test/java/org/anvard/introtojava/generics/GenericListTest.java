@@ -9,6 +9,8 @@ import org.mockito.runners.MockitoJUnitRunner;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 /**
  * Created by andywaz on 2017-04-01.
@@ -36,7 +38,7 @@ public class GenericListTest {
         List<String> myList =
                 Arrays.asList("a1", "a2", "b1", "c2", "c1");
         List<String> result= GenericList.getSortedCharacters(myList);
-
         Assert.assertEquals( result.get(1), "C2" );
+
     }
 }
